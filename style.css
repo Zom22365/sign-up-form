@@ -1,0 +1,222 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+@font-face{
+    font-family: 'Norse Bold';
+    src: url('Norse-Bold.otf');
+}
+
+
+#brand{
+    margin: auto 5px;
+    font-size: 100px;
+    color: aliceblue;
+    font-family: 'Norse Bold';
+}
+
+.hearding{
+    padding: 20px 160px 20px 40px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.slogan{
+    margin-top: 20px;
+}
+
+.form{
+    padding: 20px 40px;
+    background-color:#fff ;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19);
+}
+
+.form-title{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.form-main{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.form-left, .form-right{
+    width: 48%;
+}
+
+.form-control{
+    padding-bottom: 16px;
+}
+
+.error{
+    line-height: 0px;
+    color: rgb(207, 6, 6);
+    font-size: 13px;
+}
+
+
+label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgb(51, 49, 49);
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 80%;
+    border: 1px solid rgb(212, 210, 210);
+    outline:none;
+}
+
+input:focus {
+    box-shadow: 0 2px 4px #D3D3D3;
+    border: 1px solid rgb(20, 20, 210);
+   
+  }
+
+.footer{
+    padding: 32px 180px 20px 40px;
+   
+}
+
+.signup{
+    padding: 12px 60px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #4d6f2f;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow:  0 2px 2px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.login{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.login a{
+    text-decoration: none;
+    color: #5f734d;
+}
+
+
+@media screen and (min-width: 1024px) {
+    #app{
+        display: flex; 
+    } 
+    
+
+    #left-content{
+        width:37%;
+        position: fixed;
+
+    }
+    #left-content img{
+        width:100%;
+        height: 100vh;
+        object-fit: fill;
+    }
+
+    .banner{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(9, 1, 1, 0.41);
+        top: 76px;
+        width: 100%;
+        height: 146px;
+        padding-top: 15px;
+    
+    }
+
+    
+    #logo img{
+        width: 100%;
+        height: 140px;
+    }
+
+    #right-content{
+        width:63%;
+        position: fixed;
+        right: 0px;
+        height: 100vh;
+        background-color: #f9fafb;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 1023px){
+    #left-content img{
+        width:100%;
+        height: 250px;
+        object-fit: cover
+    }
+
+    .banner{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(9, 1, 1, 0.41);
+        top: 50px;
+        width: 100%;
+        height: 120px;
+        padding-top: 15px;
+    }
+
+    #logo img{
+        width: 100%;
+        height: 100px;
+    }
+    
+  
+
+    #right-content{
+        position: absolute;
+    }
+
+    .hearding{
+        padding: 20px 40px; 
+    }
+
+    .form{
+        padding: 20px 40px;
+       
+    }
+
+    .footer{
+        padding: 32px 180px 20px 40px;
+       
+    }
+    
+    .signup{
+        padding: 12px 60px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+         background-color: #4d6f2f;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow:  0 2px 2px rgba(0,0,0,0.25);
+    }
+    
+ 
+
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="app">
+        <div id="left-content">
+            <img src="image/background.jpg" alt="anh nen">
+            <div class="banner">
+                <div id="logo"><img src="image/logo.png" alt="logo"></div>
+                <div id="brand">odin</div>
+            </div>
+        </div>
+        <div id="right-content">
+            <div class="hearding">
+                <div class="intro">This is not a real online service! You know you need something like this in your life to help yuo realize your deepest dreams. <br> Sign up <i>now</i> to get started.</div>
+                <div class="slogan"> You <i>know</i> you want to.</div>
+            </div>
+            <div class="form">
+                <h3 class="form-title">Let's do this!</h3>
+                <div class="form-main">
+                    <div class="form-left">
+                        <div class="form-control">
+                            <label for="firstName" > First Name</label>
+                            <input type="text" id="firstName">
+                            <div class=" error" id="error-null"></div>
+                        </div>
+                        <div class="form-control">
+                            <label for="email"> Email</label>
+                            <input type="text"  id="email">
+                            <div class=" error" id="errorEmail"></div>
+                        </div>
+                        <div class="form-control">
+                            <label for="password" > Password</label>
+                            <input type="password" id="password">
+                            <div class=" error" id="errorPass"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-right">
+                        <div class="form-control">
+                            <label for="lastName" > Last Name</label>
+                            <input type="text" id="lastName">
+                            <div class=" error" id="nullLastName"></div>
+                        </div>
+                        <div class="form-control">
+                            <label for="number"> Phone Number</label>
+                            <input type="text" id="number">
+                            <div class=" error" id="errorNumber"></div>
+                        </div>
+                        <div class="form-control" >
+                            <label for="password"> Confirm Password</label>
+                            <input type="password" id="conPassword">
+                            <div class=" error" id="errorConPass"></div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="footer">
+                <div>
+                    <button class="signup" onclick="Check()">
+                        Create Account
+                    </button>
+                </div>
+                <p class="login">Already have an account?<a href=""> Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
